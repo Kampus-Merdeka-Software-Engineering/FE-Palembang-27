@@ -1,0 +1,202 @@
+body {
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+  :root {
+      --black: #000000;
+      --blue: #1F3A5F;
+      --blue-light: #ACC2EF;
+      --light-color: #111;
+      --white: #FFF;
+      --box-shadow: .5rem .5rem 0 rgba(22, 120, 186, 0.2);
+      --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+      --border: .2rem solid var(--blue);
+  }
+  
+  * {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-transform: capitalize;
+      transition: all .2s ease-out;
+      text-decoration: none;
+  }
+  
+  html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-padding-top: 7rem;
+      scroll-behavior: smooth;
+  }
+  
+  section {
+      padding: 2rem 9%;
+  }
+  
+  section:nth-child(even) {
+      background: #f5f5f5;
+  }
+  
+  .heading {
+      text-align: center;
+      padding-bottom: 2rem;
+      text-shadow: var(--text-shadow);
+      text-transform: uppercase;
+      color: var(--black);
+      font-size: 5rem;
+      letter-spacing: .4rem;
+  }
+  
+  .heading span {
+      text-transform: uppercase;
+      color: var(--blue);
+  }
+  
+  .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .5rem;
+      padding-left: 1rem;
+      border: var(--border);
+      border-radius: .5rem;
+      box-shadow: var(--box-shadow);
+      color: var(--blue);
+      cursor: pointer;
+      font-size: 1.7rem;
+      background: #fff;
+  }
+  
+  .btn-sign {
+      display: inline-flex;
+      padding: 8px 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 6px;
+      border: 2px solid #4D648D;
+      background: #1F3A5F;
+  }
+  
+  .btn span {
+      padding: .7rem 1rem;
+      border-radius: .5rem;
+      background: var(--blue);
+      color: #fff;
+      margin-left: .5rem;
+  }
+  
+  .btn:hover {
+      background: var(--blue);
+      color: #fff;
+  }
+  
+  .btn:hover span {
+      color: var(--blue);
+      background: #fff;
+      margin-left: 1rem;
+  }
+  
+  .header {
+      padding: 1.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #1F3A5F;
+  }
+  
+  .header .logo {
+      font-size: 2.5rem;
+      color: var(--blue-light);
+  }
+  
+  .header .logo i {
+      color: #c0392b;
+  }
+  
+  .header .navbar a {
+      font-size: 1.7rem;
+      color: var(--white);
+      margin-left: 2rem;
+  }
+  
+  .header .navbar a:hover {
+      color: var(--blue-light);
+  }
+  
+  
+  #menu-btn {
+      font-size: 2.5rem;
+      border-radius: .5rem;
+      background: var(--blue);
+      color: #fff;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      display: none;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .btn-google {
+    color: white !important;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+  }
+
+  .container {
+    text-align: center;
+    display: grid;
+    flex: 1 1 45rem;
+    color: #0f1c2e;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50px;
+    padding: 9rem 0 2rem;
+    background-color: #ACC2EF;
+  }
+
+  .container h5{
+    text-align: center;
+    display: grid;
+    flex: 1 1 45rem;
+    color: #0f1c2e;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 4rem 0 2rem;
+  }
+
+  .container .row.form-floating {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--blue-light);
+    border: 1px solid #eee;
+    gap: 2rem;
+  }
