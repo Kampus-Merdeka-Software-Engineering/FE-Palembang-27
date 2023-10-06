@@ -53,6 +53,40 @@
         </form>
     </div>
 
+    <!--Script-->
+
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript"> </script>
+
+
+	<!--Bootstra JS	-->
+	<script src="js/bootstrap.bundle.min.js" type="text/javascript"> </script>
+
+	<!--Owl Carousel	-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		type="text/javascript"> </script>
+
+	<!--Custom JS	-->
+	<script src="js/custom.js" type="text/javascript"> </script>
+
+	<script>
+		$('.reviews-slide').owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 1
+				}
+			}
+		})
+	</script>
+
 </body>
 
 </html>
